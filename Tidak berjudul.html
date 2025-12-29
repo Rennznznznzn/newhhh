@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Sayang ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+h1, h2 {
+  color: #b3124f;
+}
+
+p {
+  max-width: 850px;
+  margin: 25px auto;
+  font-size: 1.1em;
+  line-height: 1.9;
+}
+
+.play-btn {
+  background: #c2185b;
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Slide animation */
+.slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s ease;
+}
+.slide.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide img {
+  width: 90%;
+  max-width: 520px;
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+}
+
+.caption {
+  margin-top: 25px;
+  font-style: italic;
+}
+
+/* Falling hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: rgba(255,255,255,0.75);
+  font-size: 18px;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to { transform: translateY(110vh); }
+}
+
+footer {
+  padding: 40px;
+  font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<iframe id="music" width="0" height="0" allow="autoplay"></iframe>
+
+<section>
+  <h1>Happy Birthday Sayang ❤️</h1>
+  <p>
+    Aku belajar bahwa cinta tidak selalu tentang hal besar.
+    Kadang ia hadir lewat senyum kecil, obrolan sederhana,
+    dan rasa nyaman yang tidak pernah aku temukan sebelumnya.
+  </p>
+  <button class="play-btn" onclick="playMusic()">❤️ Putar Lagu Kita</button>
+</section>
+
+<section class="slide">
+  <img src="foto1.jpg">
+  <p class="caption">
+    Di malam yang sederhana, kamu membawa keindahan yang tidak sederhana.
+    Senyummu membuatku yakin bahwa memilihmu adalah keputusan terbaik.
+  </p>
+</section>
+
+<section class="slide">
+  <img src="foto2.jpg">
+  <p class="caption">
+    Bersamamu, aku tidak perlu menjadi siapa-siapa.
+    Cukup menjadi diriku sendiri, dan itu sudah terasa lengkap.
+  </p>
+</section>
+
+<section class="slide">
+  <img src="foto3.jpg">
+  <p class="caption">
+    Di tengah perjalanan yang melelahkan,
+    aku menemukan tenang di bahumu, di tatapanmu.
+  </p>
+</section>
+
+<section class="slide">
+  <img src="foto4.jpg">
+  <p class="caption">
+    Kita berdiri berdampingan, bukan karena harus,
+    tapi karena ingin. Dan itu adalah bentuk cinta paling jujur.
+  </p>
+</section>
+
+<section class="slide">
+  <img src="foto5.jpg">
+  <p class="caption">
+    Hujan turun, malam dingin,
+    tapi selama aku bersamamu, semuanya terasa cukup.
+  </p>
+</section>
+
+<!-- 🎂 ULANG TAHUN & HARAPAN -->
+<section class="slide">
+  <h2>Selamat Ulang Tahun, Sayangku 🎂</h2>
+  <p>
+    Hari ini bukan sekadar tentang bertambahnya usia,
+    tetapi tentang betapa berharganya kamu bagi dunia 
+    dan terutama, bagi hidupku.<br><br>
+
+    Terima kasih sudah tumbuh menjadi pribadi yang lembut,
+    kuat, dan penuh kasih. Terima kasih karena tetap menjadi kamu,
+    dengan segala kelebihan dan kekurangan yang justru
+    membuatmu begitu istimewa di mataku.<br><br>
+
+    Di setiap langkahmu ke depan,
+    aku berdoa semoga kamu selalu diberi kesehatan,
+    ketenangan hati, dan kekuatan untuk meraih mimpi-mimpi
+    yang selama ini kamu simpan dalam doa-doa kecilmu.<br><br>
+
+    Semoga senyummu tidak pernah kehilangan alasan untuk muncul,
+    semoga hatimu selalu menemukan rumah,
+    dan semoga setiap lelahmu selalu berakhir dengan bahagia.<br><br>
+
+    Jika suatu hari dunia terasa berat,
+    ingatlah bahwa kamu tidak pernah sendiri.
+    Aku akan selalu ada di sisimu,
+    mendengarkan, menemani, dan memilihmu 
+    berkali-kali, tanpa ragu.<br><br>
+
+    <b>Aku bersyukur karena kamu lahir ke dunia ini,  
+    dan aku lebih bersyukur lagi karena kamu hadir di hidupku 🤍</b>
+  </p>
+</section>
+
+<section>
+  <h2>Janji Kecil Dariku 💌</h2>
+  <p>
+    Aku tidak berjanji menjadi sempurna,
+    tapi aku berjanji untuk selalu memilihmu 
+    hari ini, esok, dan seterusnya.<br><br>
+    <b>Aku sayang kamu, Sayangku 🤍</b>
+  </p>
+</section>
+
+<footer>
+  02 Januari ✨
+</footer>
+
+<script>
+function playMusic() {
+  document.getElementById("music").src =
+  "https://www.youtube.com/embed/Q3KZ6z5w0T8?autoplay=1&loop=1&playlist=Q3KZ6z5w0T8";
+}
+
+/* slide on scroll */
+const slides = document.querySelectorAll('.slide');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+});
+slides.forEach(slide => observer.observe(slide));
+
+/* hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 7000);
+}
+setInterval(createHeart, 450);
+</script>
+
+</body>
+</html>
